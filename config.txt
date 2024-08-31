@@ -1,3 +1,3 @@
-MYBASE="/scratch/mwasci/sprabu/satellites/MWA-Pipeline"
+MYBASE="/scratch/mwasci/sprabu/MWA-Pipeline"
 MYCLUSTER="garrawarla"
 MYACCOUNT="mwasci"
