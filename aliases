@@ -1,0 +1,4 @@
+alias wsclean='singularity exec /pawsey/mwa/singularity/wsclean/wsclean.img wsclean'
+alias calibrate='singularity exec /pawsey/mwa/singularity/mwa-reduce/mwa-reduce.img calibrate'
+alias chgcentre='singularity exec /pawsey/mwa/singularity/wsclean/wsclean.img chgcentre'
+alias aoflagger='singularity exec /pawsey/mwa/singularity/wsclean/wsclean.img aoflagger'
