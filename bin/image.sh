@@ -9,11 +9,11 @@ start=`date +%s`
 
 module load singularity
 shopt -s expand_aliases
+source /scratch/mwasci/sprabu/MWA-Pipeline/aliases
+
 
 set -x
 {
-
-source ${myPath}/aliases
 
 obsnum=OBSNUM
 base=BASE

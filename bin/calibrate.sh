@@ -9,7 +9,7 @@
 start=`date +%s`
 module load singularity
 shopt -s expand_aliases
-
+source /scratch/mwasci/sprabu/MWA-Pipeline/aliases
 
 set -x
 {
@@ -18,18 +18,16 @@ obsnum=OBSNUM
 base=BASE
 model=
 
-source ${myPath}/aliases
-
 while getopts 'm:' OPTION
 do
     case "$OPTION" in
         m)
-            link=${OPTARG}
+            model=${OPTARG}
             ;;
     esac
 done
 
-cd ${base}/processing/
+cd ${base}/processing/${obsnum}
 
 ### round 1
 calibrate -absmem 120 -m ../../models/model-${model}*withalpha.txt \
