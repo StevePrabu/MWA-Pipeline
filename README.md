@@ -11,6 +11,17 @@ processing: contains a folder with the observation ID within which resides the m
 queue/logs: log files of the slurm job
 
 ### obs_wget.sh
+    obs_wget.sh [-o obsnum] [-l wget link] 
+      -o  obsnum      : the observation id
+      -l  wget link   : wget link for the obs from asvo
 
+### obs_calibrate.sh
+    obs_calibrate.sh [-o obsnum] [-m model] [-d dependancy]
+      -o obsnum	: observation id
+      -m model	: the calibrator model
+      -d dependancy   : dependant job id
 
-
+### obs_image.sh
+    obs_image.sh [-o obsnum] [-d dependancy]
+      -o  obsnum  : the observation id
+      -d dependancy   : dependant job id
