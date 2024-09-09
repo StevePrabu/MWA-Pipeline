@@ -10,6 +10,19 @@ processing: contains a folder with the observation ID within which resides the m
 
 queue/logs: log files of the slurm job
 
+## Setting up
+There are a few currently 2 hardcoded paths that will be made to work in a more generic manner in future updates.
+1) Once the repo is downloaded, the path to aliases needs to be updated appropriately.
+For example, if your user name is abcd, the following lines needs to be replaced in files (bin/calibrate.sh and bin/image.sh)
+
+    source /scratch/mwasci/sprabu/MWA-Pipeline/aliases
+
+The above line needs to be changed as below
+
+    source /scratch/mwasci/abcd/MWA-Pipeline/aliases
+2) The path also needs to be changed in config.txt file
+
+
 ### obs_wget.sh
     obs_wget.sh [-o obsnum] [-l wget link] 
       -o  obsnum      : the observation id
