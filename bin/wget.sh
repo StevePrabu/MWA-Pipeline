@@ -34,7 +34,12 @@ mkdir ${obsnum}
 cd ${obsnum}
 
 ## download file
-wget -O ${obsnum}_ms.tar "${link}"
+outfile="${obsnum}_ms.tar"
+if [[ -e "${outfile}" ]]; then
+    echo "${outfile} exists, not downloading again"
+else
+    wget -O ${obsnum}_ms.tar "${link}"
+fi
 
 ## untar file
 tar -xvf ${obsnum}_ms.tar
